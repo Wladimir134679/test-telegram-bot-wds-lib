@@ -1,0 +1,4 @@
+rootProject.name = 'test-bot-spring'
+
+include ':manager-bot-lib'
+project(':manager-bot-lib').projectDir = new File('../wds-manager-bot-lib')

@@ -1,0 +1,24 @@
+server:
+  port: 10_16
+
+telegram:
+  bot:
+    username: testBot
+    token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
+    config: "./config/main.yaml"
+
+bot:
+  data_base: testbot
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/${bot.data_base}
+    username: myuser
+    password: password12345
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: ru.wdeath.managerbot.lib.config.WDSDBDialect
+    open-in-view: false
