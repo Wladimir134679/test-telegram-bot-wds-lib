@@ -6,8 +6,8 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
 import ru.wdeath.managerbot.lib.bot.annotations.ParamName;
-import ru.wdeath.managerbot.lib.bot.command.TextCommandFirst;
-import ru.wdeath.managerbot.lib.bot.command.TextCommandNames;
+import ru.wdeath.managerbot.lib.bot.annotations.TextCommandFirst;
+import ru.wdeath.managerbot.lib.bot.annotations.TextCommandNames;
 
 @TextCommandNames("/test")
 @Service
