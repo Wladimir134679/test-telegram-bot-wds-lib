@@ -6,6 +6,12 @@ telegram:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
     config: "./config/main.yaml"
+    setting:
+      default: false
+  session:
+    time-life:
+      chat: 60
+      user: 10
 
 bot:
   data_base: testbot
