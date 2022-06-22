@@ -6,8 +6,6 @@ telegram:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
     config: "./config/main.yaml"
-    setting:
-      default: false
   session:
     time-life:
       chat: 60
@@ -28,3 +26,5 @@ spring:
       ddl-auto: validate
     database-platform: ru.wdeath.managerbot.lib.config.WDSDBDialect
     open-in-view: false
+    show-sql: true
+
