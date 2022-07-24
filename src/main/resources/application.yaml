@@ -2,20 +2,27 @@ server:
   port: 10_16
 
 telegram:
+  client:
+    back:
+      host: "http://localhost:8021/api/"
+      myHost: "http://localhost:1016/api/"
+      token: "f16ef737-e6b9-45ac-937f-cfca5f654615"
   bot:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
-    config: "./config/main.yaml"
-  session:
-    time-life:
-      chat: 60
-      user: 10
+    session:
+      enable: true
+      time-life:
+        chat: 60
+        user: 10
 
 bot:
   data_base: testbot
 
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/${bot.data_base}

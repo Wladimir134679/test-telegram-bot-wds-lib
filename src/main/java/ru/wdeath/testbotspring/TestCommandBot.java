@@ -5,10 +5,10 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
-import ru.wdeath.managerbot.lib.bot.annotations.ParamName;
-import ru.wdeath.managerbot.lib.bot.annotations.TextCommandFirst;
-import ru.wdeath.managerbot.lib.bot.annotations.TextCommandNames;
-import ru.wdeath.managerbot.lib.bot.annotations.TextCommandOther;
+import ru.wdeath.managerbot.lib.bot.command.annotations.ParamName;
+import ru.wdeath.managerbot.lib.bot.command.annotations.TextCommandFirst;
+import ru.wdeath.managerbot.lib.bot.command.annotations.TextCommandNames;
+import ru.wdeath.managerbot.lib.bot.command.annotations.TextCommandOther;
 import ru.wdeath.managerbot.lib.bot.session.UserBotSession;
 
 import java.util.UUID;
