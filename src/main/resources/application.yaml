@@ -6,7 +6,7 @@ telegram:
     back:
       host: "http://localhost:8021/api/"
       myHost: "http://localhost:1016/api/"
-      token: "f16ef737-e6b9-45ac-937f-cfca5f654615"
+      token: "75e49bb7-17cd-4077-aa58-74d40f48241b"
   bot:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
