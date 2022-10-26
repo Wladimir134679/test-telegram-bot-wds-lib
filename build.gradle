@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-	implementation(project(':manager-bot-lib'))
+	implementation(project(':wds-program-agent-telegram-bot-lib'))
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

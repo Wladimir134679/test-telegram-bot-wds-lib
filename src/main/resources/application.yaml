@@ -6,7 +6,7 @@ telegram:
     back:
       host: "http://localhost:8021/api/"
       myHost: "http://localhost:1016/api/"
-      token: "75e49bb7-17cd-4077-aa58-74d40f48241b"
+      token: "9f55b71c-a921-452c-b992-7e095ab0f898"
   bot:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
@@ -31,7 +31,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    database-platform: ru.wdeath.managerbot.lib.config.WDSDBDialect
+    database-platform: ru.wdeath.programagent.lib.config.WDSDBDialect
     open-in-view: false
     show-sql: true
 
