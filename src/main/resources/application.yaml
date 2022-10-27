@@ -1,12 +1,13 @@
 server:
   port: 10_16
 
-telegram:
+program-agent:
   client:
-    back:
-      host: "http://localhost:8021/api/"
-      myHost: "http://localhost:1016/api/"
-      token: "9f55b71c-a921-452c-b992-7e095ab0f898"
+    host: "http://localhost:8021/api/"
+    myHost: "http://localhost:1016/api/"
+    token: "9f55b71c-a921-452c-b992-7e095ab0f898"
+
+telegram:
   bot:
     username: testBot
     token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
