@@ -6,6 +6,7 @@ program-agent:
     host: "http://localhost:8021/api/"
     myHost: "http://localhost:1016/api/"
     token: "9f55b71c-a921-452c-b992-7e095ab0f898"
+    time-delay-send: 15000
 
 telegram:
   bot:
