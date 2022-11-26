@@ -16,7 +16,7 @@ class TestBotSpringApplicationTests {
 
 	@Test
 	void contextLoads() {
-		List<ChartTimestampModel.ChartPointModel> generate = chartTimestampMessage.generate(chartTimestampMessage.getDefaultFromTime(), chartTimestampMessage.getDefaultToTime());
+		List<ChartTimestampModel.ChartPointModel> generate = chartTimestampMessage.generate(ChartTimestampModel.GroupType.DAY, chartTimestampMessage.getDefaultFromTime(), chartTimestampMessage.getDefaultToTime());
 		System.out.println(generate);
 	}
 
