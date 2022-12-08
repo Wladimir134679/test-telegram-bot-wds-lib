@@ -34,12 +34,17 @@ public class TestCharts implements ChartHandler {
 
     @Override
     public LocalDateTime getDefaultFromTime() {
-        return LocalDateTime.now().minusDays(1);
+        return LocalDateTime.now().minusWeeks(1);
     }
 
     @Override
     public LocalDateTime getDefaultToTime() {
         return LocalDateTime.now();
+    }
+
+    @Override
+    public boolean isAbilityGroupTimestamp() {
+        return true;
     }
 
     @Override
