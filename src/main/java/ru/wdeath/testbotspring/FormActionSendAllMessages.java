@@ -18,7 +18,7 @@ public class FormActionSendAllMessages implements FormActionHandler {
 
     @Override
     public String getTitle() {
-        return "Рассылка сообщений";
+        return "НЕУ";
     }
 
     @Override
@@ -28,7 +28,7 @@ public class FormActionSendAllMessages implements FormActionHandler {
 
     @Override
     public String getDescription() {
-        return "Отправка всем сообщений";
+        return "ВФЦВФЦй";
     }
 
     @Override

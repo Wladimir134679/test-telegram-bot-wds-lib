@@ -5,9 +5,9 @@ program-agent:
   charts:
     bot-message: true
   client:
-    host: "http://localhost:8021/api/"
-    myHost: "http://localhost:1016/api/"
-    token: "9f55b71c-a921-452c-b992-7e095ab0f898"
+    host: "http://localhost:8027/api/"
+    myHost: "http://host.docker.internal:1016/api/"
+    token: "tuts-token-bot-dev"
     time-delay-send: 15000
 
 telegram:
@@ -30,6 +30,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/${bot.data_base}
+#    username: postgres
+#    password: W12345678
     username: myuser
     password: password12345
   jpa:
