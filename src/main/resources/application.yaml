@@ -5,15 +5,23 @@ program-agent:
   charts:
     bot-message: true
   client:
-    host: "http://localhost:8027/api/"
-    myHost: "http://host.docker.internal:1016/api/"
-    token: "tuts-token-bot-dev"
+    token: "tuts-token-dew-bot"
     time-delay-send: 15000
+    host: "http://localhost:12345/api/"
+    myHost: "http://localhost:1016/api/"
+
+    #    host: "http://localhost:8027/api/"
+    #    myHost: "http://172.24.112.1:1016/api/"
+
+#    host: "https://wds-program-agent.ru/api/"
+#    myHost: "http://185.230.141.165:1016/api/"
+#    #    token: "tuts-token-bot-dev"
+#    token: "8005d524-cc8c-4e49-9713-a5d2cdf404ee"
 
 telegram:
   bot:
     username: testBot
-    token: "1914390526:AAF2pVOEU-ek5yLINFLrcLLjnHB9w4PFZTg"
+    token: "1914390526:AAF2LjnHB9w4PFZTg"
     session:
       enable: true
       time-life:
@@ -30,8 +38,6 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/${bot.data_base}
-#    username: postgres
-#    password: W12345678
     username: myuser
     password: password12345
   jpa:
