@@ -16,7 +16,7 @@ telegram:
       save-history: 3_600_000
   bot:
     username: testBot
-    token: "1914390526:AAF2LjnHB9w4PFZTg"
+    token: "6072783186:AAF6HvBlnPlBwlDi-HEhALJEUKYYOWsHwl0"
     session:
       enable: true
       time-life:

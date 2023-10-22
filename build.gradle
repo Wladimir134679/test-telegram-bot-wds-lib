@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
 	implementation(project(':wds-program-agent-telegram-bot-lib'))
+	implementation(project(':wds-telegram-bot-starter'))
+	implementation(project(':wds-util-lib'))
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
