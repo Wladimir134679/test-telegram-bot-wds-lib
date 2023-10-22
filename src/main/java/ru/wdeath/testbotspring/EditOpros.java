@@ -1,7 +1,5 @@
 package ru.wdeath.testbotspring;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.Data;
@@ -9,17 +7,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.yaml.snakeyaml.Yaml;
-import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
-import ru.wdeath.managerbot.lib.bot.service.UserTelegramService;
-import ru.wdeath.managerbot.lib.db.UserTelegramEntity;
 import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
 import ru.wdeath.programagent.lib.service.FormActionService;
 
 import javax.annotation.PostConstruct;
-import java.util.List;
 
 @Service
 @Slf4j

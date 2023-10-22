@@ -5,11 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
-import ru.wdeath.managerbot.lib.bot.service.UserTelegramService;
 import ru.wdeath.managerbot.lib.db.UserTelegramEntity;
+import ru.wdeath.managerbot.lib.service.UserTelegramService;
 import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
 import ru.wdeath.programagent.lib.service.FormActionService;
+import ru.wdeath.telegram.bot.starter.TelegramLongPollingEngine;
 
 import javax.annotation.PostConstruct;
 import java.util.List;

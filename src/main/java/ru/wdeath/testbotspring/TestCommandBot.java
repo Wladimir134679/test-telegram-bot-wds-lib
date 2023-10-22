@@ -4,12 +4,12 @@ import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
-import ru.wdeath.managerbot.lib.bot.annotations.CommandFirst;
-import ru.wdeath.managerbot.lib.bot.annotations.CommandNames;
-import ru.wdeath.managerbot.lib.bot.annotations.CommandOther;
-import ru.wdeath.managerbot.lib.bot.annotations.ParamName;
-import ru.wdeath.managerbot.lib.bot.session.UserBotSession;
+import ru.wdeath.telegram.bot.starter.TelegramLongPollingEngine;
+import ru.wdeath.telegram.bot.starter.annotations.CommandFirst;
+import ru.wdeath.telegram.bot.starter.annotations.CommandNames;
+import ru.wdeath.telegram.bot.starter.annotations.CommandOther;
+import ru.wdeath.telegram.bot.starter.annotations.ParamName;
+import ru.wdeath.telegram.bot.starter.session.UserBotSession;
 
 import java.util.UUID;
 

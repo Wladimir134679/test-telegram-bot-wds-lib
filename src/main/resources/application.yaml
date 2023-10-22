@@ -10,15 +10,10 @@ program-agent:
     host: "http://localhost:12345/api/"
     myHost: "http://localhost:1016/api/"
 
-    #    host: "http://localhost:8027/api/"
-    #    myHost: "http://172.24.112.1:1016/api/"
-
-#    host: "https://wds-program-agent.ru/api/"
-#    myHost: "http://185.230.141.165:1016/api/"
-#    #    token: "tuts-token-bot-dev"
-#    token: "8005d524-cc8c-4e49-9713-a5d2cdf404ee"
-
 telegram:
+  agent:
+    scheduled:
+      save-history: 3_600_000
   bot:
     username: testBot
     token: "1914390526:AAF2LjnHB9w4PFZTg"

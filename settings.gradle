@@ -5,3 +5,9 @@ project(':wds-program-agent-telegram-bot-lib').projectDir = new File('../wds-pro
 
 include 'wds-program-agent-lib'
 project(':wds-program-agent-lib').projectDir = new File('../wds-program-agent-lib')
+
+include 'wds-util-lib'
+project(':wds-util-lib').projectDir = new File('../wds-util-lib')
+
+include 'wds-telegram-bot-starter'
+project(':wds-telegram-bot-starter').projectDir = new File('../wds-telegram-bot-starter')

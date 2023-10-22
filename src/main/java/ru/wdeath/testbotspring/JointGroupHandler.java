@@ -9,9 +9,9 @@ import org.telegram.telegrambots.meta.api.objects.ChatJoinRequest;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import ru.wdeath.managerbot.lib.bot.TelegramLongPollingEngine;
-import ru.wdeath.managerbot.lib.bot.interfaces.HandlerBotUpdate;
-import ru.wdeath.managerbot.lib.bot.service.UsersUseBotService;
+import ru.wdeath.managerbot.lib.service.UsersUseBotService;
+import ru.wdeath.telegram.bot.starter.TelegramLongPollingEngine;
+import ru.wdeath.telegram.bot.starter.interfaces.HandlerBotUpdate;
 
 @Component
 @Slf4j

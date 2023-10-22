@@ -9,6 +9,19 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class Test4ProgressBar implements ProgressBarHandler {
+
+    // =============== Регистрация процесса в адвижке
+    @Autowired
+    public ProgressBarService service;
+
+    @PostConstruct
+    public void init(){
+        service.registration(this);
+    }
+
+
+    // ==========================================
+
     @Override
     public String name() {
         return "Test4";
@@ -28,11 +41,5 @@ public class Test4ProgressBar implements ProgressBarHandler {
     public float progress() {
         return 0.24f;
     }
-    @Autowired
-    public ProgressBarService service;
 
-    @PostConstruct
-    public void init(){
-        service.registration(this);
-    }
 }
