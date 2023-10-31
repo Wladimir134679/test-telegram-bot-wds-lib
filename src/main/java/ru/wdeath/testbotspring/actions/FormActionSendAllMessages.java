@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.actions;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +18,7 @@ public class FormActionSendAllMessages implements FormActionHandler {
 
     @Override
     public String getTitle() {
-        return "НЕУ";
+        return "Создание отчета";
     }
 
     @Override
@@ -28,7 +28,7 @@ public class FormActionSendAllMessages implements FormActionHandler {
 
     @Override
     public String getDescription() {
-        return "ВФЦВФЦй";
+        return "{}";
     }
 
     @Override

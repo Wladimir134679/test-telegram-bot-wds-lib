@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.charts;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -24,12 +24,12 @@ public class TestCharts implements ChartHandler {
 
     @Override
     public String getNameDisplay() {
-        return "Name Display";
+        return "Проверка случайности";
     }
 
     @Override
     public String getDescription() {
-        return "Desc";
+        return "Данные сгенерированы случайно, и фильтры позволяют суммировать данные в промежутки времени";
     }
 
     @Override

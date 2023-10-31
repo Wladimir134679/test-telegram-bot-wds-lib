@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.tables;
 
 import lombok.RequiredArgsConstructor;
 import net.bytebuddy.utility.RandomString;
@@ -22,17 +22,17 @@ public class Test2TableHandler implements TableHandler {
 
     @Override
     public String title() {
-        return "Для второй";
+        return "Результаты опроса";
     }
 
     @Override
     public String description() {
-        return "Тут описание на одном языке";
+        return "Пользователи которые завершили опрос, видны здесь. Данные сгенерированы случайно";
     }
 
     @Override
     public String[] headers() {
-        return new String[]{"ID", "UUID"};
+        return new String[]{"ID", "UUID", "Средний балл", "Время прохождения(секунды)"};
     }
 
     @Override
@@ -40,9 +40,11 @@ public class Test2TableHandler implements TableHandler {
         int len = 100;
         Object[][] rows = new Object[len][];
         for (int i = 0; i < len; i++) {
-            rows[i] = new Object[2];
+            rows[i] = new Object[4];
             rows[i][0] = i;
             rows[i][1] = RandomString.make(10);
+            rows[i][2] = (int)(Math.random() * 100);
+            rows[i][3] = (int)(Math.random() * 500) + 10;
         }
         return rows;
     }

@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.tables;
 
 import lombok.RequiredArgsConstructor;
 import net.bytebuddy.utility.RandomString;
@@ -22,12 +22,12 @@ public class TestTableHandler implements TableHandler {
 
     @Override
     public String title() {
-        return "Для тестов";
+        return "Таблица с пользователями";
     }
 
     @Override
     public String description() {
-        return "Тут описание на одном языке";
+        return "Данные сгенерированы случайно, допустим, из базы данных взято";
     }
 
     @Override

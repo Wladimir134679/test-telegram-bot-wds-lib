@@ -10,7 +10,7 @@ import ru.wdeath.telegram.bot.starter.annotations.ParamName;
 
 @CommandNames({"/start"})
 @Component
-public class STartCommandBot {
+public class StartCommandBot {
 
     @CommandFirst
     public void response(TelegramLongPollingEngine engine, @ParamName("chatId") Long chatId){

@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.progressbars;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -8,15 +8,15 @@ import ru.wdeath.programagent.lib.service.ProgressBarService;
 import javax.annotation.PostConstruct;
 
 @Component
-public class Test1ProgressBar implements ProgressBarHandler {
+public class Test3ProgressBar implements ProgressBarHandler {
     @Override
     public String name() {
-        return "Test1";
+        return "p3";
     }
 
     @Override
     public String description() {
-        return "Проверка случанойсти на прогрессе";
+        return "Статичное число";
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Test1ProgressBar implements ProgressBarHandler {
 
     @Override
     public float progress() {
-        return (float) Math.random();
+        return 0.54f;
     }
     @Autowired
     public ProgressBarService service;

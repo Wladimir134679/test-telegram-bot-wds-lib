@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.actions;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

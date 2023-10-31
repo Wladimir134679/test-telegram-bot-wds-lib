@@ -1,4 +1,4 @@
-package ru.wdeath.testbotspring;
+package ru.wdeath.testbotspring.actions;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +35,7 @@ public class SendAllMessage  implements FormActionHandler {
 
     @Override
     public String getDescription() {
-        return "Рассылка сообщений всем";
+        return "Рассылка сообщений пользователям бота";
     }
 
     @Override
@@ -45,7 +45,7 @@ public class SendAllMessage  implements FormActionHandler {
 
     @Override
     public String getText() {
-        return "null";
+        return "{\"text\":\"\", \"from\": [\"all\"]}";
     }
 
     @Override
