@@ -34,7 +34,7 @@ public class TestCommandBot {
         backClientService.newNotification(
                 "Тест пользователем " + message.getFrom().getFirstName() + " пройден",
                 "Результат теста " + (int) (Math.random() * 100),
-                NewNotificationModel.Priority.HIGH);
+                NewNotificationModel.Priority.MEDIUM);
 
         try {
             engine.execute(send);

@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
+import ru.wdeath.programagent.lib.model.NewNotificationModel;
+import ru.wdeath.programagent.lib.service.BackClientService;
 import ru.wdeath.programagent.lib.service.FormActionService;
 
 import javax.annotation.PostConstruct;
@@ -14,6 +16,7 @@ import javax.annotation.PostConstruct;
 public class FormActionSendAllMessages implements FormActionHandler {
 
     private final FormActionService formActionService;
+    private final BackClientService backClientService;
     private String lastSend = "";
 
     @Override
@@ -45,6 +48,9 @@ public class FormActionSendAllMessages implements FormActionHandler {
     public void processingText(String text) {
         log.info("Processing new message: " + text);
         lastSend = text;
+
+
+        backClientService.newNotification("События формы " + getTitle(), "Было сделано то-то и то-то, вот ваш запрос: " + text, NewNotificationModel.Priority.HIGH);
     }
 
     @PostConstruct
