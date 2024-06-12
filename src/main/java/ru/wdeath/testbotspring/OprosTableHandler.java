@@ -1,12 +1,12 @@
 package ru.wdeath.testbotspring;
 
 import lombok.RequiredArgsConstructor;
-import net.bytebuddy.utility.RandomString;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 import ru.wdeath.programagent.lib.service.TableHandlerService;
 import ru.wdeath.programagent.lib.tables.TableHandler;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.util.UUID;
 
 @Service
@@ -42,9 +42,9 @@ public class OprosTableHandler implements TableHandler {
         for (int i = 0; i < len; i++) {
             rows[i] = new Object[4];
             rows[i][0] = i;
-            rows[i][1] = RandomString.make(10);
+            rows[i][1] = RandomStringUtils.random(10);
             rows[i][2] = (long)(Math.random() * 1000000L);
-            rows[i][3] = RandomString.make(15);
+            rows[i][3] = RandomStringUtils.random(15);
         }
         return rows;
     }

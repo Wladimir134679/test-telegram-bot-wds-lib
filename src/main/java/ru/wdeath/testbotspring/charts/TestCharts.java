@@ -6,7 +6,7 @@ import ru.wdeath.programagent.lib.chart.ChartHandler;
 import ru.wdeath.programagent.lib.model.ChartTimestampModel;
 import ru.wdeath.programagent.lib.service.ChartTimestampHandlerService;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

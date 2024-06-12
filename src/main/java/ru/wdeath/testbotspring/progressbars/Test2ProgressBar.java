@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import ru.wdeath.programagent.lib.progressbar.ProgressBarHandler;
 import ru.wdeath.programagent.lib.service.ProgressBarService;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 @Component
 public class Test2ProgressBar implements ProgressBarHandler {

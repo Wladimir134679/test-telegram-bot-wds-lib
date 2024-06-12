@@ -5,23 +5,11 @@ program-agent:
   charts:
     bot-message: true
   client:
-    token: "ee34593b-03a7-434b-954f-bfc8d36e5fe7"
+    token: "1145068f-c7e1-4a79-be68-df101702387c"
     time-delay-send: 15000
     host: "https://wds-program-agent.ru/api/"
     myHost: "http://10.9.0.3:1016/api/"
 
-telegram:
-  agent:
-    scheduled:
-      save-history: 3_600_000
-  bot:
-    username: "@w_rss_bot"
-    token: "5092560247:AAHABHgW-1B-pFdhDLmBAYGbFNVu64ySWZ4"
-    session:
-      enable: true
-      time-life:
-        chat: 60
-        user: 10
 
 bot:
   data_base: testbot

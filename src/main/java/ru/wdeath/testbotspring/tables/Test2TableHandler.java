@@ -1,12 +1,12 @@
 package ru.wdeath.testbotspring.tables;
 
 import lombok.RequiredArgsConstructor;
-import net.bytebuddy.utility.RandomString;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 import ru.wdeath.programagent.lib.service.TableHandlerService;
 import ru.wdeath.programagent.lib.tables.TableHandler;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.util.UUID;
 
 @Service
@@ -42,7 +42,7 @@ public class Test2TableHandler implements TableHandler {
         for (int i = 0; i < len; i++) {
             rows[i] = new Object[4];
             rows[i][0] = i;
-            rows[i][1] = RandomString.make(10);
+            rows[i][1] = RandomStringUtils.random(10);
             rows[i][2] = (int)(Math.random() * 100);
             rows[i][3] = (int)(Math.random() * 500) + 10;
         }

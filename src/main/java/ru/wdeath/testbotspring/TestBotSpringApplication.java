@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import ru.wdeath.managerbot.lib.TelegramBotAutoConfig;
 import ru.wdeath.managerbot.lib.charts.ChartTimestampMessage;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableCaching

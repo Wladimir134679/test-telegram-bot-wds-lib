@@ -1,5 +1,6 @@
 package ru.wdeath.testbotspring.actions;
 
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -7,8 +8,6 @@ import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
 import ru.wdeath.programagent.lib.model.NewNotificationModel;
 import ru.wdeath.programagent.lib.service.BackClientService;
 import ru.wdeath.programagent.lib.service.FormActionService;
-
-import javax.annotation.PostConstruct;
 
 @Component
 @RequiredArgsConstructor

@@ -1,5 +1,6 @@
 package ru.wdeath.testbotspring.actions;
 
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
 import ru.wdeath.programagent.lib.service.FormActionService;
 import ru.wdeath.telegram.bot.starter.TelegramLongPollingEngine;
 
-import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service

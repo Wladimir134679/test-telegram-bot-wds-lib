@@ -2,6 +2,7 @@ package ru.wdeath.testbotspring.actions;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Service;
 import ru.wdeath.programagent.lib.form.actions.FormActionHandler;
 import ru.wdeath.programagent.lib.service.FormActionService;
 
-import javax.annotation.PostConstruct;
 
 @Service
 @Slf4j
