@@ -53,16 +53,18 @@ public class SendAllMessage  implements FormActionHandler {
         log.info("Start replay messages");
         Thread thread = new Thread(() -> {
             log.info("Start.......");
-            SendMessage sendMessage = new SendMessage();
-            sendMessage.setText(text);
 
             List<UserTelegramEntity> all = userTelegramService.findAll();
             all.forEach(userTelegramEntity -> {
-                sendMessage.setChatId(userTelegramEntity.getIdChatTelegram());
+                SendMessage sendMessage = SendMessage
+                        .builder()
+                        .chatId(userTelegramEntity.getIdChatTelegram())
+                        .text(text)
+                        .build();
                 try {
                     engine.execute(sendMessage);
                 } catch (TelegramApiException e) {
-                    log.error("UserTelegram send message error, " + userTelegramEntity, e);
+                    log.error("UserTelegram send message error, {}", userTelegramEntity, e);
                 }
                 try {
                     Thread.sleep(10);

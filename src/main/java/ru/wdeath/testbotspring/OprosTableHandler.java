@@ -27,6 +27,7 @@ public class OprosTableHandler implements TableHandler {
 
     @Override
     public String description() {
+        System.out.println("Show description Opros table");
         return "Люди прошедшие опрос";
     }
 

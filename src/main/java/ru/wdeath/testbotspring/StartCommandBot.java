@@ -20,9 +20,11 @@ public class StartCommandBot {
 
     @CommandFirst
     public void response(TelegramLongPollingEngine engine, @ParamName("chatId") Long chatId){
-        var send = new SendMessage();
+        var send = SendMessage.builder()
+                .chatId(chatId)
+                .text("И тебе привет")
+                .build();
         send.setChatId(String.valueOf(chatId));
-        send.setText("И тебе привет");
 
         backClientService.newNotification("Запуск бота", "Пользователь " + chatId + " запустил бота", NewNotificationModel.Priority.LOW);
 

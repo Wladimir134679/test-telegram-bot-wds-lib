@@ -3,7 +3,7 @@ package ru.wdeath.testbotspring;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.Message;
+import org.telegram.telegrambots.meta.api.objects.message.Message;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.wdeath.programagent.lib.model.NewNotificationModel;
 import ru.wdeath.programagent.lib.service.BackClientService;
@@ -26,10 +26,11 @@ public class TestCommandBot {
 
     @CommandFirst
     public void test(TelegramLongPollingEngine engine, Message message, @ParamName("chatId") Long chatId, UserBotSession userBotSession) {
-        var send = new SendMessage();
-        send.setChatId(String.valueOf(chatId));
+        var send = SendMessage.builder()
+                .chatId(chatId)
+                .text("тест пройден)")
+                .build();
         userBotSession.setData("Tut data: " + UUID.randomUUID().toString());
-        send.setText("тест пройден)");
 
         backClientService.newNotification(
                 "Тест пользователем " + message.getFrom().getFirstName() + " пройден",
@@ -45,9 +46,10 @@ public class TestCommandBot {
 
     @CommandOther
     public void other(TelegramLongPollingEngine engine, Message message, UserBotSession userBotSession, @ParamName("chatId") Long chatId) {
-        var send = new SendMessage();
-        send.setChatId(String.valueOf(chatId));
-        send.setText("Были такие данные: " + userBotSession.getData());
+        var send = SendMessage.builder()
+                .chatId(chatId)
+                .text("Были такие данные: " + userBotSession.getData())
+                .build();
 
         try {
             engine.execute(send);
