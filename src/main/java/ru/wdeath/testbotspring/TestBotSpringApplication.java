@@ -9,12 +9,14 @@ import ru.wdeath.managerbot.lib.TelegramBotAutoConfig;
 import ru.wdeath.managerbot.lib.charts.ChartTimestampMessage;
 
 import jakarta.annotation.PostConstruct;
+import ru.wdeath.util.OutConsoleCopyQueue;
 
 @SpringBootApplication
 @EnableCaching
 public class TestBotSpringApplication {
 
     public static void main(String[] args) {
+        OutConsoleCopyQueue.instanceDefaultConsoleCopy().setSize(100);
         SpringApplication.run(TestBotSpringApplication.class, args);
     }
 
